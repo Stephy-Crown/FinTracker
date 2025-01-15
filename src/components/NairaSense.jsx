@@ -63,6 +63,7 @@ const NairaSense = () => {
       localStorage.setItem("transactions", JSON.stringify(transactions));
       localStorage.setItem("currency", currency);
       localStorage.setItem("conversionRate", JSON.stringify(conversionRate));
+      setConversionRate(conversionRate);
     }
   }, [transactions, currency, conversionRate]);
 
