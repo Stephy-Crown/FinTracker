@@ -2,8 +2,8 @@
 
 **FinTracker** is a modern finance management web application designed to help users track their income and expenses seamlessly. With features like real-time transaction updates, currency conversion, and interactive dashboards, FinTracker simplifies financial management for smarter decisions.
 
-The v2 of the **Personal Budget Tracker App**.
-https://budget-tracker-app-ebon.vercel.app/
+The v2 of my [**Personal Budget Tracker App**](https://budget-tracker-app-ebon.vercel.app/)
+Still undergoing updates for v3.
 
 ## Features
 
@@ -34,5 +34,33 @@ https://budget-tracker-app-ebon.vercel.app/
    ```
 3. **Run the application:**
    ```bash
-   npm start
+   npm dev
    ```
+
+# Usage
+
+- **Add Transactions**: Click on the "Add Transaction" button to record your income or expenses.
+- **Edit Transactions**: Hover over any transaction to edit or update details.
+- **Delete Transactions**: Remove unwanted transactions with a simple click.
+- **Currency Toggle**: Switch between NGN (₦) and USD ($) using the currency toggle button. You can also customize the exchange rate.
+
+# Local Storage
+
+Your transactions are saved in the browser's local storage. This ensures your data is preserved even after closing the browser.
+
+# Contributing
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-name).
+3. Make your changes and commit (git commit -am 'Add new feature').
+4. Push to the branch (git push origin feature-name).
+5. Create a new Pull Request.
+
+<!-- License
+This project is licensed under the MIT License - see the LICENSE file for details. -->
+
+## License
+
+This project is **proprietary** and is owned by [Stephanie Udemezue]. You may not use, distribute, or modify this code without explicit permission.
+
+Happy FinTracking! 💸
