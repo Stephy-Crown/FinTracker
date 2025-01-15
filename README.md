@@ -7,7 +7,7 @@
 - **Add/Edit/Delete Transactions**: Manage your finances effortlessly by adding, updating, or deleting transactions.
 - **Real-Time Statistics**: View income, expenses, and balance updates instantly.
 - **Currency Conversion**: Switch between NGN (₦) and USD ($) with customizable conversion rates.
-- **Interactive UI**: A visually appealing and responsive interface designed with React and TailwindCSS.
+- **Interactive UI**: A visually appealing and responsive interface designed with Next.js and TailwindCSS.
 - **Local Storage**: Persistent data storage using the browser's local storage.
 - **Greeting Based on Time**: Personalized greeting messages based on the time of day.
 
@@ -27,8 +27,3 @@
 2. **Install dependencies**
  ```bash
  npm install
-3. **Run the application**
- ```bash
- npm run dev
-
-
