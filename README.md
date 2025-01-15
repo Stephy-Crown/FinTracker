@@ -1,8 +1,9 @@
 # FinTracker 📊
 
 **FinTracker** is a modern finance management web application designed to help users track their income and expenses seamlessly. With features like real-time transaction updates, currency conversion, and interactive dashboards, FinTracker simplifies financial management for smarter decisions.
-The v2 of the **Personal Budget Tracker App**.
-https://budget-tracker-app-ebon.vercel.app/
+
+   The v2 of the **Personal Budget Tracker App**.
+   https://budget-tracker-app-ebon.vercel.app/
 
 ## Features
 
