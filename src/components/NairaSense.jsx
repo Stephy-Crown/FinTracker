@@ -55,7 +55,7 @@ const NairaSense = () => {
   useEffect(() => {
     setTransactions(getLocalStorage("transactions", []));
     setCurrency(getLocalStorage("currency", "NGN"));
-    setConversionRate(getLocalStorage("conversionRate", 850));
+    setConversionRate(getLocalStorage("conversionRate", 1700));
   }, []);
 
   useEffect(() => {
