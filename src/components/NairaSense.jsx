@@ -160,7 +160,7 @@ const NairaSense = () => {
               FinTracker
               <span className="animate-bounce text-5xl">📊</span>
             </h1>
-            <p className="text-purple-200 text-lg font-medium">
+            <p className="text-purple-200 md:text-lg text-md font-medium">
               Simplify Your Finances, Track Smartly and Succeed.
             </p>
           </div>
