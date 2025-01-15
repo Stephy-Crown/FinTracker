@@ -1,7 +1,7 @@
 # FinTracker 📊
 
 **FinTracker** is a modern finance management web application designed to help users track their income and expenses seamlessly. With features like real-time transaction updates, currency conversion, and interactive dashboards, FinTracker simplifies financial management for smarter decisions.
-
+The v2 of the **Personal Budget Tracker App**.
 ## Features
 
 - **Add/Edit/Delete Transactions**: Manage your finances effortlessly by adding, updating, or deleting transactions.
@@ -27,6 +27,7 @@
 2. **Install dependencies**
  ```bash
  npm install
+
 
 
 
