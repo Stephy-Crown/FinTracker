@@ -156,7 +156,7 @@ const NairaSense = () => {
 
           {/* Enhanced Title with Emoji */}
           <div className="space-y-2">
-            <h1 className="text-6xl font-bold font-mono tracking-tight text-white flex items-center justify-center gap-2">
+            <h1 className="md:text-6xl text-4xl  font-bold font-mono tracking-tight text-white flex items-center justify-center gap-2">
               FinTracker
               <span className="animate-bounce text-5xl">📊</span>
             </h1>
@@ -167,7 +167,7 @@ const NairaSense = () => {
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-2 transform hover:scale-105 transition-all">
             <DollarSign className="w-6 h-6 mx-auto mb-2 text-purple-200" />
-            <p className="text-sm">Today's Balance</p>
+            <p className="text-sm text-gray-50">Today's Balance</p>
             <p className="text-xl font-bold">{formatMoney(totals.balance)}</p>
           </div>
           {/* Quick Stats Banner */}
