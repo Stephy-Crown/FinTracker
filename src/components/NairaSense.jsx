@@ -41,7 +41,7 @@ const NairaSense = () => {
   const [notification, setNotification] = useState("");
   const [editingId, setEditingId] = useState(null);
   const [currency, setCurrency] = useState("NGN");
-  const [conversionRate, setConversionRate] = useState(850);
+  const [conversionRate, setConversionRate] = useState(1600);
   const [isEditingRate, setIsEditingRate] = useState(false);
   const [greeting, setGreeting] = useState("");
 
@@ -55,7 +55,7 @@ const NairaSense = () => {
   useEffect(() => {
     setTransactions(getLocalStorage("transactions", []));
     setCurrency(getLocalStorage("currency", "NGN"));
-    setConversionRate(getLocalStorage("conversionRate", 1700));
+    setConversionRate(getLocalStorage("conversionRate", 1600));
   }, []);
 
   useEffect(() => {
