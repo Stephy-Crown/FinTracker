@@ -24,3 +24,11 @@
    ```bash
    git clone https://github.com/yourusername/fintracker.git
    cd fintracker
+2. **Install dependencies**
+ ```bash
+ npm install
+3. **Run the application**
+ ```bash
+ npm run dev
+
+
