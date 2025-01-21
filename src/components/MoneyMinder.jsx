@@ -561,3 +561,165 @@ const MoneyMinder = () => {
 };
 
 export default MoneyMinder;
+
+{
+  /* Transaction History
+        <Card className="bg-white shadow-xl">
+          <CardHeader className="border-b bg-gradient-to-r from-purple-50 to-blue-50">
+            <div className="flex justify-between items-center">
+              <CardTitle className="text-xl font-bold text-gray-800">
+                Transaction History
+              </CardTitle>
+              <button
+                onClick={() => setShowTransactions(!showTransactions)}
+                className="text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                {showTransactions ? (
+                  <ChevronUp size={24} />
+                ) : (
+                  <ChevronDown size={24} />
+                )}
+              </button>
+            </div>
+          </CardHeader>
+          {showTransactions && (
+            <CardContent className="p-6">
+              {transactions.length === 0 ? (
+                <p className="text-gray-600 text-center py-8">
+                  No transactions found
+                </p>
+              ) : (
+                <ul className="space-y-4">
+                  {transactions.map((transaction) => (
+                    <li
+                      key={transaction.id}
+                      className="flex justify-between items-center p-2 border rounded-lg hover:bg-gray-50 transition-colors group"
+                    >
+                      <div className="flex items-center">
+                        {transaction.amount >= 0 ? (
+                          <PlusCircle
+                            size={20}
+                            className="inline mr-2 text-green-500"
+                          />
+                        ) : (
+                          <MinusCircle
+                            size={20}
+                            className="inline mr-2 text-red-500"
+                          />
+                        )}
+                        <p className="text-gray-800 font-medium">
+                          {transaction.description}
+                        </p>
+                      </div>
+                      <p className="text-sm text-gray-600">
+                        {new Date(transaction.date).toLocaleDateString()}
+                      </p>
+                      <div className="flex items-center space-x-4">
+                        <p
+                          className={`font-bold ${
+                            transaction.amount >= 0
+                              ? "text-green-500"
+                              : "text-red-500"
+                          }`}
+                        >
+                          {formatMoney(transaction.amount)}
+                        </p>
+                        <button
+                          onClick={() => editTransaction(transaction)}
+                          className="text-blue-600 hover:text-blue-700  transition-opacity"
+                        >
+                          <Edit2 size={20} />
+                        </button>
+                        <button
+                          onClick={() => deleteTransaction(transaction.id)}
+                          className="text-red-600 hover:text-red-700 transition-opacity"
+                        >
+                          <Trash2 size={20} />
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </CardContent>
+          )}
+        </Card> */
+}
+
+{
+  /* Transaction History
+        <Card className="bg-white shadow-xl">
+          <CardHeader className="border-b bg-gradient-to-r from-purple-50 to-blue-50">
+            <div className="flex justify-between items-center">
+              <CardTitle className="text-xl font-bold text-gray-800">
+                Transaction History
+              </CardTitle>
+              <button
+                onClick={() => setShowTransactions(!showTransactions)}
+                className="text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                {showTransactions ? (
+                  <ChevronUp size={24} />
+                ) : (
+                  <ChevronDown size={24} />
+                )}
+              </button>
+            </div>
+          </CardHeader>
+          {showTransactions && (
+            <CardContent className="p-4 sm:p-6 max-h-96 overflow-auto">
+              {transactions.length === 0 ? (
+                <p className="text-gray-600 text-center py-8">
+                  No transactions found
+                </p>
+              ) : (
+                <ul className="space-y-4">
+                  {transactions.map((transaction) => (
+                    <li
+                      key={transaction.id}
+                      className="flex flex-wrap justify-between items-center p-1 border rounded-lg hover:bg-gray-50 transition-colors group"
+                    >
+                      <div className="flex items-center space-x-2 w-full sm:w-auto">
+                        {transaction.amount >= 0 ? (
+                          <PlusCircle size={20} className="text-green-500" />
+                        ) : (
+                          <MinusCircle size={20} className="text-red-500" />
+                        )}
+                        <p className="text-gray-800 font-medium text-sm sm:text-base">
+                          {transaction.description}
+                        </p>
+                      </div>
+                      <p className="text-sm text-gray-600 w-full sm:w-auto text-right sm:text-left">
+                        {new Date(transaction.date).toLocaleDateString()}
+                      </p>
+                      <div className="flex items-center space-x-4 mt-2 sm:mt-0">
+                        <p
+                          className={`font-bold text-sm sm:text-base ${
+                            transaction.amount >= 0
+                              ? "text-green-500"
+                              : "text-red-500"
+                          }`}
+                        >
+                          {formatMoney(transaction.amount)}
+                        </p>
+                        <button
+                          onClick={() => editTransaction(transaction)}
+                          className="text-blue-600 hover:text-blue-700 transition-opacity"
+                        >
+                          <Edit2 size={20} />
+                        </button>
+                        <button
+                          onClick={() => deleteTransaction(transaction.id)}
+                          className="text-red-600 hover:text-red-700 transition-opacity"
+                        >
+                          <Trash2 size={20} />
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </CardContent>
+          )}
+        </Card> */
+}

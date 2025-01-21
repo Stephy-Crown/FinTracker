@@ -1,7 +1,7 @@
 // src/components/ui/card.js
 export function Card({ children }) {
   return (
-    <div className="border border-purple-200 shadow-lg rounded p-4">
+    <div className="border border-purple-200 shadow-lg rounded p-2 m-2">
       {children}
     </div>
   );

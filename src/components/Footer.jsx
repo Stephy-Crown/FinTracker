@@ -22,17 +22,17 @@ import {
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center space-y-2">
+    <div className="flex flex-col items-center space-y-2 mt-4">
       <p className="flex items-center text-gray-600">
         Made with <FaHeart className="text-red-500 mx-1" size={16} /> by
         Stephanie Udemezue
       </p>
-      <p className="p-0 text-gray-600">
+      <div className="p-0 text-gray-600">
         <p>Get in touch with me and send feedback/reviews</p>
-      </p>
+      </div>
       <div className="flex space-x-4 pb-4">
         <Link
-          href="https://github.com/yourusername"
+          href="https://github.com/Stephy-Crown"
           className="text-gray-600 hover:text-purple-600 transition-colors"
         >
           <FaGithub size={20} />

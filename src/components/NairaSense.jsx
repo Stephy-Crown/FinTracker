@@ -230,7 +230,7 @@ const NairaSense = () => {
       </div>
 
       {/* Rest of your component remains the same */}
-      <div className="max-w-4xl mx-auto p-4 space-y-6 mt-2">
+      <div className="max-w-4xl mx-auto space-y-6 my-4">
         {notification && (
           <Alert className="animate-fade-in bg-white shadow-xl border-l-4 border-purple-500">
             <AlertDescription>{notification}</AlertDescription>
@@ -238,13 +238,13 @@ const NairaSense = () => {
         )}
 
         {/* Transaction Form */}
-        <Card className="bg-white shadow-xl pt-20">
+        <Card className="bg-white shadow-xl">
           <CardHeader className="border-b bg-gradient-to-r from-purple-50 to-blue-50">
             <CardTitle className="text-xl font-bold text-gray-800">
               {editingId ? "Edit Transaction" : "Add New Transaction"}
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4 p-6 ">
+          <CardContent className="space-y-4 p-6">
             <input
               type="text"
               value={description}
@@ -273,8 +273,10 @@ const NairaSense = () => {
             </button>
           </CardContent>
         </Card>
+      </div>
 
-        {/* Transaction History */}
+      {/* Transaction History */}
+      <div className="max-w-4xl mx-auto space-y-6 my-4">
         <Card className="bg-white shadow-xl">
           <CardHeader className="border-b bg-gradient-to-r from-purple-50 to-blue-50">
             <div className="flex justify-between items-center">
@@ -294,7 +296,7 @@ const NairaSense = () => {
             </div>
           </CardHeader>
           {showTransactions && (
-            <CardContent className="p-6">
+            <CardContent className="p-4 sm:p-6 max-h-96 overflow-auto">
               {transactions.length === 0 ? (
                 <p className="text-gray-600 text-center py-8">
                   No transactions found
@@ -304,30 +306,29 @@ const NairaSense = () => {
                   {transactions.map((transaction) => (
                     <li
                       key={transaction.id}
-                      className="flex justify-between items-center p-2 border rounded-lg hover:bg-gray-50 transition-colors group"
+                      className="flex flex-wrap items-center justify-between gap-4 p-2 border rounded-lg hover:bg-gray-50 transition-colors"
                     >
-                      <div className="flex items-center">
+                      {/* Left Section */}
+                      <div className="flex items-center flex-wrap space-x-2">
                         {transaction.amount >= 0 ? (
-                          <PlusCircle
-                            size={20}
-                            className="inline mr-2 text-green-500"
-                          />
+                          <PlusCircle size={20} className="text-green-500" />
                         ) : (
-                          <MinusCircle
-                            size={20}
-                            className="inline mr-2 text-red-500"
-                          />
+                          <MinusCircle size={20} className="text-red-500" />
                         )}
-                        <p className="text-gray-800 font-medium">
+                        <p className="text-gray-800 font-medium text-sm sm:text-base">
                           {transaction.description}
                         </p>
                       </div>
+
+                      {/* Center Section */}
                       <p className="text-sm text-gray-600">
                         {new Date(transaction.date).toLocaleDateString()}
                       </p>
+
+                      {/* Right Section */}
                       <div className="flex items-center space-x-4">
                         <p
-                          className={`font-bold ${
+                          className={`font-bold text-sm sm:text-base ${
                             transaction.amount >= 0
                               ? "text-green-500"
                               : "text-red-500"
@@ -337,7 +338,7 @@ const NairaSense = () => {
                         </p>
                         <button
                           onClick={() => editTransaction(transaction)}
-                          className="text-blue-600 hover:text-blue-700  transition-opacity"
+                          className="text-blue-600 hover:text-blue-700 transition-opacity"
                         >
                           <Edit2 size={20} />
                         </button>
@@ -356,6 +357,7 @@ const NairaSense = () => {
           )}
         </Card>
       </div>
+
       <Footer />
     </div>
   );
